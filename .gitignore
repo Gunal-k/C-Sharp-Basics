@@ -1,0 +1,44 @@
+# Build folders
+bin/
+obj/
+
+# Visual Studio Code
+.vscode/
+
+# Visual Studio
+.vs/
+
+# Rider
+.idea/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# NuGet
+*.nupkg
+packages/
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Generated files
+TestResults/
+coverage/
+
+# Publish output
+publish/
+
+# Local environment
+.env
+.env.*
+
+# Backup files
+*.bak
+*.tmp
