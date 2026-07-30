@@ -1,31 +1,62 @@
 ﻿using CSharpBasics.Basics;
 using CSharpBasics.Projects;
 
-Console.WriteLine("Choose a lesson:");
-Console.WriteLine("1. Variables");
-Console.WriteLine("2. Operators");
-Console.WriteLine("3. Project1");
-Console.WriteLine("4. Project2");
-
+Console.WriteLine("Choose Folder:");
+Console.WriteLine("1. Basics");
+Console.WriteLine("2. Projects");
 
 string? choice = Console.ReadLine();
 
 switch (choice)
 {
     case "1":
-        Variables.Run();
-        break;
+        Console.WriteLine("\nChoose a lesson:");
+        Console.WriteLine("1. Variables");
+        Console.WriteLine("2. Operators");
 
+        string? ch = Console.ReadLine();
+        Console.WriteLine();
+
+        switch(ch)
+        {
+            case "1":
+                Variables.Run();
+                break;
+
+            case "2":
+                Operators.Run();
+                break;
+        }
+        break;
+        
     case "2":
-        Operators.Run();
-        break;
+        Console.WriteLine("\nChoose a Project:");
+        Console.WriteLine("1. Calculate Print Student Grades");
+        Console.WriteLine("2. Calculate Final GPA");
+        Console.WriteLine("3. Arrays Iteration Selection");
+        Console.WriteLine("4. Arrays Iteration Selection 2");
+        
+        string? ch2 = Console.ReadLine();
+        Console.WriteLine();
 
-    case "3":
-        CalculatePrintStudentGrades.Run();
-        break;
-    
-    case "4":
-        CalculateFinalGpa.Run();
+        switch (ch2)
+        {
+            case "1":
+                CalculatePrintStudentGrades.Run();
+                break;
+            
+            case "2":
+                CalculateFinalGpa.Run();
+                break;
+            
+            case "3":
+                ArraysIterationSelection.Run();
+                break;
+            
+            case "4":
+                ArraysIterationSelection2.Run();
+                break;
+        }
         break;
 
     default:
